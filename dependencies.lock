@@ -1,0 +1,33 @@
+{
+    "annotationProcessor": {
+        "org.springframework.boot:spring-boot-configuration-processor": {
+            "locked": "2.3.12.RELEASE"
+        }
+    },
+    "jacocoAgent": {
+        "org.jacoco:org.jacoco.agent": {
+            "locked": "0.8.6"
+        }
+    },
+    "jacocoAnt": {
+        "org.jacoco:org.jacoco.ant": {
+            "locked": "0.8.6"
+        }
+    },
+    "testCompileClasspath": {
+        "org.springframework.boot:spring-boot-starter-log4j2": {
+            "locked": "2.3.12.RELEASE"
+        },
+        "org.springframework.boot:spring-boot-starter-test": {
+            "locked": "2.3.12.RELEASE"
+        }
+    },
+    "testRuntimeClasspath": {
+        "org.springframework.boot:spring-boot-starter-log4j2": {
+            "locked": "2.3.12.RELEASE"
+        },
+        "org.springframework.boot:spring-boot-starter-test": {
+            "locked": "2.3.12.RELEASE"
+        }
+    }
+}

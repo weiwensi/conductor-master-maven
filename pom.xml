@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.zybank</groupId>
+    <artifactId>conductor</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <modules>
+
+    </modules>
+    <properties>
+        <revOpenapi>1.4.2</revOpenapi>
+        <revGuavaRetrying>2.0.0</revGuavaRetrying>
+        <revBval>2.0.5</revBval>
+        <revProtoBuf>3.13.0</revProtoBuf>
+        <revCommonsIo>2.7</revCommonsIo>
+        <revSpotifyCompletableFutures>0.3.3</revSpotifyCompletableFutures>
+        <revJsonPath>2.4.0</revJsonPath>
+        <revRxJava>1.2.2</revRxJava>
+        <revGuava>30.0-jre</revGuava>
+        <revSpectator>0.122.0</revSpectator>
+        <revJAXB>2.3.3</revJAXB>
+        <revActivation>2.0.0</revActivation>
+        <revGroovy>2.5.14</revGroovy>
+        <revSpock>1.3-groovy-2.5</revSpock>
+        <revAwaitility>3.1.6</revAwaitility>
+        <revTestContainer>1.15.3</revTestContainer>
+        <revGrpc>1.33.1</revGrpc>
+        <revAwsSdk>1.11.86</revAwsSdk>
+        <revActivation>2.0.0</revActivation>
+        <revAmqpClient>5.13.0</revAmqpClient>
+        <revAwaitility>3.1.6</revAwaitility>
+        <revAzureStorageBlobSdk>12.7.0</revAzureStorageBlobSdk>
+       <revEurekaClient>1.10.10</revEurekaClient>
+        <revPowerMock>2.0.9</revPowerMock>
+        <revJersey>1.19.4</revJersey>
+        <revJq>0.0.13</revJq>
+        <revJsr311Api>1.1.1</revJsr311Api>
+        <revKafka>2.6.0</revKafka>
+        <revMicrometer>1.6.2</revMicrometer>
+        <revPrometheus>0.9.0</revPrometheus>
+        <revNatsStreaming>0.5.0</revNatsStreaming>
+        <revHealth>1.1.4</revHealth>
+        <revEmbeddedRedis>0.6</revEmbeddedRedis>
+        <revRedisson>3.13.3</revRedisson>
+        <revHamcrestAllMatchers>1.8</revHamcrestAllMatchers>
+        <revJedis>3.3.0</revJedis>
+    </properties>
+
+
+</project>

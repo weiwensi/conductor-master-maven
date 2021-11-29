@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>conductor</artifactId>
+        <groupId>org.zybank</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>grpc-server</artifactId>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+<!--  implementation project(':conductor-common')
+    implementation project(':conductor-core')
+    implementation project(':conductor-grpc')
+
+    compileOnly 'org.springframework.boot:spring-boot-starter'
+
+    implementation "io.grpc:grpc-netty:${revGrpc}"
+    implementation "io.grpc:grpc-services:${revGrpc}"
+    implementation "org.apache.commons:commons-lang3"
+
+    testImplementation "io.grpc:grpc-testing:${revGrpc}"
+    testImplementation "org.testinfected.hamcrest-matchers:all-matchers:${revHamcrestAllMatchers}"
+-->
+    <dependencies>
+        <dependency>
+            <groupId>org.zybank</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.zybank</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.zybank</groupId>
+            <artifactId>grpc</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.3.12.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty</artifactId>
+            <version>${revGrpc}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-services</artifactId>
+            <version>${revGrpc}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.10</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-testing</artifactId>
+            <version>${revGrpc}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testinfected.hamcrest-matchers</groupId>
+            <artifactId>all-matchers</artifactId>
+            <version>${revHamcrestAllMatchers}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.4.2</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
